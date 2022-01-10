@@ -23,6 +23,16 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+h2 { 
+    font-size: 32px;
+    line-height: 44px;
+}
+
+p {  
+    font-size: 16px;
+    line-height: 30px;
+}
+
 
 /* Navbar */
 
@@ -147,28 +157,17 @@ body::-webkit-scrollbar {
 
 .templates h2 {
     width: 80%;
-    font-size: 32px;
-    line-height: 44px;
-}
-
-.templates .square {
-    width: 15px;
-    height: 15px;
-    background-color: var(--primary);
 }
 
 .templates p {
     color: var(--muted) ;
-    font-size: 16px;
     width: 90%;
-    line-height: 30px;
 }
 
 .templates li {
+    line-height: 28px;
+    max-width: 96%;
     color: var(--primary);
-    font-size: 16px;
-    line-height: 30px;
-    max-width: 90%;
 }
 
 .templates li span {
@@ -220,11 +219,9 @@ body::-webkit-scrollbar {
 
 .preview h2 {
     width: 65%;
-    font-size: 32px;
 }
 
 .preview p {
-    font-size: 16px;
     width: 70%;
 }
 
@@ -236,14 +233,10 @@ body::-webkit-scrollbar {
 
 .posts h2 {
     width: 90%;
-    font-size: 32px;
-    line-height: 44px;
 }
 
 .posts p {
     width: 90%;
-    font-size: 16px;
-    line-height: 30px;
     color: var(--muted);
 }
 
@@ -273,18 +266,11 @@ body::-webkit-scrollbar {
     margin-left: -3rem;
 }
 
-.license h2 {
-    font-size: 32px;
-    line-height: 44px;
-}
-
 .license h2 span {
     color: var(--primary);
 }
 
 .license p {
-    font-size: 16px;
-    line-height: 30px;
     color: var(--muted);
 }
 
@@ -309,18 +295,11 @@ body::-webkit-scrollbar {
     color: var(--primary);
 }
 
-.download h2 {
-    font-size: 32px;
-    line-height: 44px;
-}
-
 .download h2 span {
     color: var(--primary);
 }
 
 .download p {
-    font-size: 16px;
-    line-height: 30px;
     color: var(--muted);
     width: 45%;
 }
@@ -387,7 +366,12 @@ hr {
 @media (min-width: 320px) and (max-width: 600px) {
 
     h2 {
-        font-size: 26px;
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    p {
+        line-height: 28px;
     }
 
     nav ul, nav .btn {
@@ -437,7 +421,6 @@ hr {
         flex-wrap: wrap;
     }
 
-
     .users {
         margin-bottom: 10vh;
     }
@@ -447,7 +430,7 @@ hr {
     }
     
     .users h2 {
-        width: 90%;
+        width: 94%;
     }
 
     .users .card.active {
@@ -470,69 +453,72 @@ hr {
     }
     
     .users .card-title {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .templates {
-        margin-bottom: 100px;
+        margin-bottom: 10vh;
+        margin-left: 4vw;
     }
     
-    .templates h2 {
-        width: 80%;
-        font-size: 32px;
-        line-height: 44px;
-    }
-    
-    .templates .square {
-        width: 15px;
-        height: 15px;
-        background-color: var(--primary);
-    }
-    
-    .templates p {
-        color: var(--muted) ;
-        font-size: 16px;
-        width: 90%;
-        line-height: 30px;
+    .templates h2, .templates p {
+        width: 96%;
     }
     
     .templates li {
-        color: var(--primary);
-        font-size: 16px;
-        line-height: 30px;
-        max-width: 90%;
+        max-width: 96%;
+    }
+
+    .templates-img, .templates img, .templates-grad1, .templates-grad2, .templates-grad3, .templates-grad4 {
+        display: none;
+    }
+
+    .preview {
+        clip-path: polygon(0 2%, 100% 0%, 100% 98%, 0% 100%);
+        padding: 12% 0;
+        margin-bottom: 15vh;
     }
     
-    .templates li span {
-        color: var(--dark);
+    .preview h2 {
+        width: 95%;
+        margin-top: 2vh;
     }
     
-    .templates-img {
-        width: 110%;
+    .preview img {
+        width: 90vw;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
     }
-    
-    .templates-grad1 {
-        margin-top: -105%;
-        right: -3rem;
-        z-index: -1;
+
+    .preview p {
+        width: 90%;
     }
-    
-    .templates-grad2 {
-        margin-top: -90%;
-        right: -3rem;
-        z-index: -2;
+        
+    .posts {
+        margin-bottom: 20vh;
+        margin-left: 4vw;
     }
-    
-    .templates-grad3 {
-        margin-top: -95%;
-        left: -3rem;
-        z-index: -2;
+
+    .posts h2 {
+        width: 96%;
     }
-    
-    .templates-grad4 {
-        margin-top: -110%;
-        left: -4rem;
-        z-index: -2;
+
+    .posts p {
+        width: 96%;
+    }
+
+    .posts .btn.active {
+        padding: 5% 7%;
+        width: 96%;
+    }
+
+    .posts li .btn {
+        width: 96%;
+        margin-top: 3vh;
+    }
+
+    .posts .posts-grad, .posts-img {
+        display: none;
     }
 
 }
