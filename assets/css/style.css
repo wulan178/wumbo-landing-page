@@ -369,6 +369,10 @@ hr {
 
 @media (min-width: 320px) and (max-width: 600px) {
 
+    body {
+        overflow-x: hidden;
+    }
+
     h2 {
         font-size: 28px;
         line-height: 42px;
@@ -396,7 +400,7 @@ hr {
     }
 
     .hero-img img {
-        padding-right: 3rem;
+        margin-right: 3rem;
         margin-left: auto;
         width: 100%;
     }
@@ -531,8 +535,9 @@ hr {
     }
     
     .license .license-img {
+        left: 0;
         margin-left: -1rem;
-        width: 100%;
+        width: 98vw;
         margin-bottom: 3vh;
     }
     
