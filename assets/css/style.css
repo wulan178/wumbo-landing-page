@@ -387,8 +387,7 @@ hr {
 @media (min-width: 320px) and (max-width: 600px) {
 
     h2 {
-        font-size: 28px;
-        line-height: 36px;
+        font-size: 26px;
     }
 
     nav ul, nav .btn {
@@ -396,8 +395,8 @@ hr {
     }
     
     .hero {
-        margin-top: 5vh;
-        margin-left: 3vw;
+        margin-top: 2vh;
+        margin-left: 4vw;
     }
 
     .hero .d-flex {
@@ -414,8 +413,126 @@ hr {
         width: 100%;
     }
 
+    .hero h1 {
+        font-size: 46px;
+        margin-top: 2vh;
+    }
+
+    .hero-text p {
+        font-size: 18px;
+        max-width: 95%;
+    }
+    
+    .btnPrimary {
+        padding: 15px 25px;
+        width: 70%;
+    }
+    
+    .btnLight {
+        padding: 15px 25px;
+        width: 70%;
+    }
+
     .hero .hero-btn {
         flex-wrap: wrap;
+    }
+
+
+    .users {
+        margin-bottom: 10vh;
+    }
+    
+    .users::before {
+        display: none;
+    }
+    
+    .users h2 {
+        width: 90%;
+    }
+
+    .users .card.active {
+        padding: 10% 2%;
+        width: 92vw;
+    }
+
+    .users .card {
+        width: 97vw;
+        height: max-content;
+        margin-top: 5vh;
+        padding: 5% 0;
+        text-align: center;
+    }
+    
+    .users .card img {
+        width: 70px;
+        height: 70px;
+        margin-left: auto;margin-right: auto;
+    }
+    
+    .users .card-title {
+        font-size: 22px;
+    }
+
+    .templates {
+        margin-bottom: 100px;
+    }
+    
+    .templates h2 {
+        width: 80%;
+        font-size: 32px;
+        line-height: 44px;
+    }
+    
+    .templates .square {
+        width: 15px;
+        height: 15px;
+        background-color: var(--primary);
+    }
+    
+    .templates p {
+        color: var(--muted) ;
+        font-size: 16px;
+        width: 90%;
+        line-height: 30px;
+    }
+    
+    .templates li {
+        color: var(--primary);
+        font-size: 16px;
+        line-height: 30px;
+        max-width: 90%;
+    }
+    
+    .templates li span {
+        color: var(--dark);
+    }
+    
+    .templates-img {
+        width: 110%;
+    }
+    
+    .templates-grad1 {
+        margin-top: -105%;
+        right: -3rem;
+        z-index: -1;
+    }
+    
+    .templates-grad2 {
+        margin-top: -90%;
+        right: -3rem;
+        z-index: -2;
+    }
+    
+    .templates-grad3 {
+        margin-top: -95%;
+        left: -3rem;
+        z-index: -2;
+    }
+    
+    .templates-grad4 {
+        margin-top: -110%;
+        left: -4rem;
+        z-index: -2;
     }
 
 }
