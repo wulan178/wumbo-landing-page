@@ -392,14 +392,13 @@ hr {
     }
 
     .hero-img::before {
-        width: 0;
         display: none;
     }
 
     .hero-img img {
-        margin-right: 3rem;
         margin-left: auto;
         width: 100%;
+        margin-right: 0;
     }
 
     .hero h1 {
@@ -454,7 +453,8 @@ hr {
     .users .card img {
         width: 70px;
         height: 70px;
-        margin-left: auto;margin-right: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .users .card-title {
