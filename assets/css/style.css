@@ -69,6 +69,10 @@ body::-webkit-scrollbar {
     color: var(--primary);
 }
 
+.hero-img img {
+    margin-right: -3rem;
+}
+
 .hero-img::before {
     background-image: url('/assets/img/Rectangle3.svg');
     background-repeat: no-repeat;
@@ -371,4 +375,47 @@ hr {
     height: 2px;
     width: 90%;
     background: var(--muted);
+}
+
+
+
+
+
+
+/* RESPONSIVE */
+
+@media (min-width: 320px) and (max-width: 600px) {
+
+    h2 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    nav ul, nav .btn {
+        margin: 3%;
+    }
+    
+    .hero {
+        margin-top: 5vh;
+        margin-left: 3vw;
+    }
+
+    .hero .d-flex {
+        flex-wrap: wrap-reverse;
+    }
+
+    .hero-img::before {
+        display: none;
+    }
+
+    .hero-img img {
+        margin-right: 3rem;
+        margin-left: auto;
+        width: 100%;
+    }
+
+    .hero .hero-btn {
+        flex-wrap: wrap;
+    }
+
 }
