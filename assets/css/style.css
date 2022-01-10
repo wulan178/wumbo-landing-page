@@ -110,7 +110,7 @@ p {
     width: 229px;
     height: 475px;
     z-index: -1;
-    left: 0;
+    margin-left: 0;
     margin-top: -80px;
 }
 
@@ -192,13 +192,13 @@ p {
 
 .templates-grad3 {
     margin-top: -95%;
-    left: -3rem;
+    margin-left: -3rem;
     z-index: -2;
 }
 
 .templates-grad4 {
     margin-top: -110%;
-    left: -4rem;
+    margin-left: -4rem;
     z-index: -2;
 }
 
@@ -369,10 +369,6 @@ hr {
 
 @media (min-width: 320px) and (max-width: 600px) {
 
-    body {
-        overflow-x: hidden;
-    }
-
     h2 {
         font-size: 28px;
         line-height: 42px;
@@ -396,6 +392,7 @@ hr {
     }
 
     .hero-img::before {
+        width: 0;
         display: none;
     }
 
@@ -522,6 +519,7 @@ hr {
 
     .posts li .btn {
         width: 96%;
+        padding: 5% 7%;
         margin-top: 3vh;
     }
 
@@ -535,7 +533,6 @@ hr {
     }
     
     .license .license-img {
-        left: 0;
         margin-left: -1rem;
         width: 98vw;
         margin-bottom: 3vh;
