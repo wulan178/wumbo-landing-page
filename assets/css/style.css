@@ -89,7 +89,7 @@ p {
     background-size: auto;
     position: absolute;
     margin-top: -20vh;
-    right: -7rem;
+    right: -6rem;
     z-index: -1;
     width: 100%;
     height: 869px;
@@ -175,7 +175,7 @@ p {
 }
 
 .templates-img {
-    width: 110%;
+    width: 100%;
 }
 
 .templates-grad1 {
@@ -369,6 +369,11 @@ hr {
 
 @media (min-width: 320px) and (max-width: 600px) {
 
+
+    * {
+        overflow-x: hidden;
+    }
+
     h2 {
         font-size: 28px;
         line-height: 42px;
@@ -404,6 +409,7 @@ hr {
     .hero h1 {
         font-size: 46px;
         margin-top: 2vh;
+        overflow-y: hidden;
     }
 
     .hero-text p {
@@ -459,6 +465,7 @@ hr {
     
     .users .card-title {
         font-size: 20px;
+        overflow-y: hidden;
     }
 
     .templates {
@@ -569,7 +576,7 @@ hr {
     }
 
     .download .btnDownload, .download .btnTwitter {
-        width: 85%;
+        width: 90%;
         padding: 3% 5%;
     }
     
